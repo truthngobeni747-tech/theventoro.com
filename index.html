@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventoro | Refined for Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-black border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/ventoro.icon.jpeg" alt="Ventoro" class="h-10 w-10 rounded-full object-cover">
+                <span class="heading text-3xl tracking-tighter text-amber-400">VENTORO</span>
+            </div>
+            
+            <div class="hidden md:flex gap-10 text-sm uppercase tracking-widest">
+                <a href="#shop" class="hover:text-amber-400">Shop</a>
+                <a href="#about" class="hover:text-amber-400">About</a>
+                <a href="#size-guide" class="hover:text-amber-400">Size Guide</a>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <a href="https://instagram.com/theventoro" target="_blank" class="social-icon"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="https://tiktok.com/@theventoro.com" target="_blank" class="social-icon"><i class="fab fa-tiktok text-2xl"></i></a>
+                <a href="https://wa.me/27788797262" target="_blank"
+                   class="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-full flex items-center gap-2 font-medium text-sm">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero min-h-screen flex items-center relative">
+        <div class="max-w-4xl mx-auto px-6 text-center z-10">
+            <img src="assets/ventoro.logo.jpeg" alt="Ventoro Logo" class="mx-auto mb-8 h-28">
+            <h1 class="heading text-6xl md:text-7xl font-bold tracking-tighter mb-6">REFINED FOR EXCELLENCE</h1>
+            <p class="text-xl text-zinc-300 max-w-lg mx-auto mb-10">
+                Premium streetwear designed with intention.
+            </p>
+            <a href="#shop" class="inline-block bg-white text-black px-12 py-5 rounded-2xl text-lg font-semibold hover:bg-amber-400 transition">
+                Shop Collection
+            </a>
+        </div>
+    </header>
+
+    <!-- PRODUCTS -->
+    <section id="shop" class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="heading text-5xl font-bold text-center mb-16">Signature Collection</h2>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="product-card bg-zinc-900 rounded-3xl overflow-hidden">
+                <img src="assets/ventoro.lee.jpeg" alt="Ventoro Lux Tee" class="w-full h-96 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold">Ventoro Lux Tee</h3>
+                    <p class="text-zinc-400">Premium Oversized Fit</p>
+                    <p class="text-3xl font-medium mt-4">R499.99</p>
+                    <button onclick="orderWhatsApp('Ventoro Lux Tee')" 
+                            class="mt-6 w-full bg-white text-black py-4 rounded-2xl font-semibold hover:bg-amber-400">
+                        Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-zinc-900 rounded-3xl overflow-hidden">
+                <img src="assets/ventoro.beanie.jpeg" alt="Ventoro Lux Beanie" class="w-full h-96 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold">Ventoro Lux Beanie</h3>
+                    <p class="text-zinc-400">Embroidered Premium Knit</p>
+                    <p class="text-3xl font-medium mt-4">R349.99</p>
+                    <button onclick="orderWhatsApp('Ventoro Lux Beanie')" 
+                            class="mt-6 w-full bg-white text-black py-4 rounded-2xl font-semibold hover:bg-amber-400">
+                        Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card bg-zinc-900 rounded-3xl overflow-hidden">
+                <img src="assets/ventoro.hoodie.jpeg" alt="Unisex Lux Hoodie" class="w-full h-96 object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold">Unisex Lux Hoodie</h3>
+                    <p class="text-zinc-400">Heavyweight Premium Cotton</p>
+                    <p class="text-3xl font-medium mt-4">R599.50</p>
+                    <button onclick="orderWhatsApp('Unisex Lux Ventoro Hoodie')" 
+                            class="mt-6 w-full bg-white text-black py-4 rounded-2xl font-semibold hover:bg-amber-400">
+                        Order via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-zinc-900 py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="heading text-5xl font-bold mb-8">Our Story</h2>
+            <p class="text-lg text-zinc-300 leading-relaxed">
+                Ventoro was created for those who value quality and style. 
+                Every garment is thoughtfully designed and produced with premium materials.
+            </p>
+            <img src="assets/ventoro.icon.jpeg" alt="Ventoro" class="mx-auto mt-12 h-40 rounded-full">
+        </div>
+    </section>
+
+    <!-- SIZE GUIDE -->
+    <section id="size-guide" class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="heading text-5xl font-bold text-center mb-12">Size Guide</h2>
+        <div class="max-w-2xl mx-auto bg-zinc-900 rounded-3xl p-10">
+            <table class="w-full text-left">
+                <thead>
+                    <tr class="border-b border-zinc-700">
+                        <th class="pb-4">Size</th>
+                        <th class="pb-4">Chest (cm)</th>
+                        <th class="pb-4">Length (cm)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-zinc-300">
+                    <tr class="border-b border-zinc-700"><td class="py-4">S</td><td>92-98</td><td>68</td></tr>
+                    <tr class="border-b border-zinc-700"><td class="py-4">M</td><td>102-108</td><td>70</td></tr>
+                    <tr class="border-b border-zinc-700"><td class="py-4">L</td><td>112-118</td><td>72</td></tr>
+                    <tr><td class="py-4">XL</td><td>122-128</td><td>74</td></tr>
+                </tbody>
+            </table>
+            <p class="text-sm text-zinc-400 mt-8">Message us on WhatsApp for exact measurements or hoodie sizing.</p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-24 bg-gradient-to-b from-black to-zinc-900 text-center">
+        <div class="max-w-lg mx-auto px-6">
+            <h2 class="heading text-5xl font-bold mb-6">Ready to Order?</h2>
+            <a href="https://wa.me/27788797262?text=Hi%20Ventoro%2C%20I%27m%20interested%20in%20your%20collection" 
+               target="_blank"
+               class="block bg-green-600 hover:bg-green-500 text-xl py-6 rounded-3xl font-semibold">
+                Message Us on WhatsApp
+            </a>
+            <p class="mt-6 text-zinc-400">078 879 7262</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-zinc-500">© 2026 Ventoro • theventoro.com</p>
+            <p class="text-xs text-zinc-600 mt-2">ventoro.store@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

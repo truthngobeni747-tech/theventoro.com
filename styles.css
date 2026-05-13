@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.heading {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+/* Hero */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url('assets/hero.bg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Product Cards */
+.product-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+}
+
+/* Circle Crop for Icons */
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Social Icons */
+.social-icon {
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    color: #fbbf24;
+    transform: scale(1.1);
+}
+
+/* Mobile Navbar Fix */
+@media (max-width: 768px) {
+    nav .flex {
+        gap: 12px;
+    }
+    .social-icon {
+        padding: 8px;
+    }
+}
